@@ -5,7 +5,7 @@ The goal of this project is to develop a continuous development process so that 
 A tag can be generated in git after a commit is created with the command 'git tag [tagname]'. The tag can be pushed with the command 'git push origin [tagname]'.<br />
 A GitHub action workflow has been created so that when a commit is pushed with a tag, a commit will also be pushed to DockerHub with the same tag name.<br />
 [Link to DockerHub repository](https://hub.docker.com/repository/docker/arrjaybrooks/f23cicd/general)<br />
-##Part 2
+## Part 2
 Docker can be installed to an ubuntu device without a GUI using the command 'sudo apt install docker.io'. <br />
 The container uses the rmi command to remove the old image, pulls the new image and builds it using the --restart flag to restart the container. The script should be in ubuntu's home directory for this build to work correctly.<br />
 Webhook can be installed on the instance using the command 'sudo apt-get install webhook'. <br />
